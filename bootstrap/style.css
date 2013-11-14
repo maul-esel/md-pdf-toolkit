@@ -1,0 +1,70 @@
+pre, *:not(pre) > code {
+  background-color: lightgray;
+  border: solid gray 1px;
+}
+pre {
+  padding: 3px;
+  width: 120%;
+}
+
+hr {
+  page-break-after: always;
+}
+
+p, li {
+  text-align: justify;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+table {
+  border-collapse: collapse;
+}
+tr:nth-child(2n) td {
+  background-color: #CDCDCD;
+}
+td {
+  border-bottom: solid gray 1px;
+}
+th, td {
+  padding: 5px;
+  border-left: solid gray 1px;
+  border-right: solid gray 1px;
+}
+th:first-child, td:first-child {
+  border-left-style: none;
+}
+th:last-child, td:last-child {
+  border-right-style: none;
+}
+th {
+  border-bottom: solid gray 2px;
+}
+
+body > * {
+  margin-left: 75px;
+}
+h2, hr {
+  margin-left: 25px;
+}
+h3 {
+  margin-left: 50px;
+}
+
+h1 {
+  margin: auto;
+  text-align: center;
+  font-size:200%;
+}
+
+.studInfo {
+  margin: auto;
+  margin-top: 50px;
+  font-size: 150%;
+  text-align: center;
+}
+.studInfo * {
+  margin: auto;
+}
