@@ -31,7 +31,7 @@ echo "$content" >> "$file"
 jekyll build
 cd _site
 
-wkhtmltopdf --use-xserver --margin-top 1cm --margin-bottom 1cm "$html_file" --footer-center "[page]/[topage]" --footer-line --footer-spacing 5 --header-left "Übung 10 Team 5" --header-right "Informatik Übungen $base" --header-spacing 5 --header-line "$pdf_file"
+wkhtmltopdf --use-xserver --margin-top 1.75cm --margin-bottom 1.75cm "$html_file" --footer-center "[page]/[topage]" --footer-line --footer-spacing 5 --header-left "Übung 10 Team 5" --header-right "Informatik Übungen $base" --header-spacing 5 --header-line "$pdf_file"
 cp "$pdf_file" "$DIR/$end_file"
 
 cd "$DIR"
