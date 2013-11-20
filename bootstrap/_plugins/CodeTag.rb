@@ -1,4 +1,4 @@
-class CodeBlock < Liquid::Tag
+﻿class CodeBlock < Liquid::Tag
   def initialize(tag_name, markup, tokens)
     @file = sanitize_filename(markup)
   end
