@@ -59,16 +59,6 @@ h1 {
   font-size:200%;
 }
 
-.studInfo {
-  margin: auto;
-  margin-top: 50px;
-  font-size: 150%;
-  text-align: center;
-}
-.studInfo * {
-  margin: auto;
-}
-
 .periodic {
 	border-top: solid black 1px;
 }
