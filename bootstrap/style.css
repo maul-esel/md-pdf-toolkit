@@ -68,3 +68,7 @@ h1 {
 .studInfo * {
   margin: auto;
 }
+
+.periodic {
+	border-top: solid black 1px;
+}
