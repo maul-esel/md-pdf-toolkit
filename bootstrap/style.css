@@ -62,3 +62,9 @@ h1 {
 .periodic {
   border-top: solid black 1px;
 }
+
+blockquote {
+	border: solid lightgray 2px;
+	border-left: solid lightgray 7.5px;
+	padding: 5px;
+}
