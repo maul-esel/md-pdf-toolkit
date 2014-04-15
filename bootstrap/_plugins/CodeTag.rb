@@ -33,7 +33,7 @@ CODE
   end
 
   def full_file_name
-    if /\..$/ =~ @file
+    if /\..+$/ =~ @file
       @file
     else
       @file + ".c"
