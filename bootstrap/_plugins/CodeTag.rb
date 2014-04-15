@@ -9,14 +9,14 @@
 
   def render(context)
     validate_file(context)
-    
+
     code = File.read(full_file_path(context))
-    enwrap_code(code)
+    enwrap_code(code, code_lang(context))
   end
 
-  def enwrap_code(code)
+  def enwrap_code(code, lang)
     <<-CODE
-```c
+```#{lang}
 #{code}
 ```
 CODE
@@ -30,6 +30,10 @@ CODE
 
   def full_file_path(context)
     File.join(code_path(context), full_file_name)
+  end
+
+  def code_lang(context)
+    context.registers[:site].config['code_lang'] || 'c'
   end
 
   def full_file_name

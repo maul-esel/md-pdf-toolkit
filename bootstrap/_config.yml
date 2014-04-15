@@ -1,5 +1,6 @@
 markdown: redcarpet
 code_path: "../../Code"
+code_lang: java
 redcarpet:
   extensions:
     - no_intra_emphasis
